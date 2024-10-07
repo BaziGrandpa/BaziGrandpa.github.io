@@ -2,10 +2,11 @@
 layout: page
 title: "This post demonstrates post content styles"
 subtitle: "This is a subtitle"
-date:   2016-05-20 21:21:21 +0530
-categories: junk
-author: "Bart Simpson"
+date:   2023-10-06 20:30:00 +0200
+categories: general
 meta: "Springfield"
+published: true
+tags: [example, demo, styles]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
