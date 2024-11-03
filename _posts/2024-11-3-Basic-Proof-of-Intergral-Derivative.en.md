@@ -4,6 +4,7 @@ title:  "Fundamental Theorem of Calculus"
 subtitle: "My understanding of the Fundamental Theorem of Calculus: A Step-by-Step Proof Explained"
 date:   2024-11-03 10:21:21 +0530
 categories: ["Analysis"]
+lang: "en"
 ---
 
 Have you ever wondered why the derivative of an integral gives back the original function? This connection lies at the heart of the Fundamental Theorem of Calculus, which beautifully ties together differentiation and integration—the two central concepts of calculus. In this blog post, I'll take you through an intuitive proof that demonstrates why:

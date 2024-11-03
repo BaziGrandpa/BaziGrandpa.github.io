@@ -4,6 +4,7 @@ title:  "Traditional optimization method"
 subtitle: "Unconstrained optimization"
 date:   2024-10-07 21:21:21 +0530
 categories: ["Stochastic Optimization"]
+lang: "en"
 ---
 
 One usually distinguishes between two types of optimization problems: numerical and analytical. However here we disdinguish between **unconstrained** and **constrained** optimization problems. In this post we will focus on unconstrained optimization problems. 

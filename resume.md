@@ -3,6 +3,7 @@ layout: page
 title: Zhou Jingbo
 subtitle: An awesome person
 published: false
+lang: "en"
 ---
 
 <span style="float: right; "><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}"><strong>> Download as PDF</strong></a> </span>

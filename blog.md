@@ -2,10 +2,11 @@
 layout: page
 title: Blog
 subtitle: Select ramblings of Pudhina
+lang: "en"
 ---
 
 <div>
-{% assign postsCategory = site.posts | group_by_exp:"post", "post.categories"  %}
+{% assign postsCategory = site.posts | where: "lang", "en" | group_by_exp:"post", "post.categories"  %}
 {% for category in postsCategory %}
 <h4 class="post-teaser__month">
 <strong>

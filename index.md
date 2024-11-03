@@ -2,6 +2,7 @@
 layout: page
 title: Hej!
 subtitle: welcome to my blog. 
+lang: "en"
 sitemap:
   priority: 0.9
 ---

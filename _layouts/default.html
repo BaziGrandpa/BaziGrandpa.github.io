@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
     {% include meta_tags/base.html %}
     {% include externals/styling.html %}
@@ -19,6 +19,17 @@
 <body>
 <div class="wrapper">
 {% include header.html %}
+
+{% if page.collection == "posts" %}
+<div class="language-switcher">
+    {% if page.lang == "en" %}
+        <a href="{{ page.url | replace: '.en', '.zh' }}" class="lang-link">中文</a>
+    {% elsif page.lang == "zh" %}
+        <a href="{{ page.url | replace: '.zh', '.en' }}" class="lang-link">English</a>
+    {% endif %}
+</div>
+{% endif %}
+
 {{ content }}
 </div>
 {% include externals/scripting.html %}

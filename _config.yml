@@ -21,3 +21,17 @@ styles: [agate, androidstudio, arta, asceti, atelier-cave.dark, atelier-cave.lig
 # Build settings
 highlighter: null
 markdown: kramdown
+
+# permalink: /:lang/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      lang: "en" # Default language set to English for posts
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      lang: "en" # Default language set to English for pages
