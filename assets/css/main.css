@@ -169,10 +169,11 @@
 
 /* =Main Page *//*************************************************************/
   #about-img {
-    border-radius: 13%;
-    max-width: 125px;
+    border-radius: 30%;
+    max-width: 250px;
     margin: auto;
-    margin-bottom: 3%;
+    margin-top: 0%;
+    margin-bottom: -10%;
   }
 
   #describe-text {
