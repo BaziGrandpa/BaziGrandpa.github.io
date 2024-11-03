@@ -17,5 +17,4 @@ $f(x) \approx f(x_0) + \nabla f(x_0)^T(x-x_0)$
 
 `a super long quote that will break the line and make it look ugly`
 
-
 ## Newton's method
