@@ -62,10 +62,9 @@ where $c$ is some point between $x$ and $x + \Delta x$. And $\Delta x \to 0$, so
 </p> -->
 
 ## Key Takeaways
-The intuition of the proof is that 
 - the corresponding change of $F(x)$ respects the tiny change $\Delta x$ is $f(x) \cdot \Delta x$
 - and then we divide by $\frac{f(x) \cdot \Delta x}{\Delta x} $ to get the rate of change of $F(x)$ with respect to $x$. 
-- This rate of change is precisely $f(x)$. This is why the derivative of an integral gives back the original function.
+- This rate of change is precisely $f(x)$. This is why the derivative of an integral gives back the integrand function.
 
 
 

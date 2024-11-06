@@ -23,9 +23,9 @@
 {% if page.collection == "posts" %}
 <div class="language-switcher">
     {% if page.lang == "en" %}
-        <a href="{{ page.url | replace: '.en', '.zh' }}" class="lang-link">中文</a>
+        <a href="{{ page.url | replace: '.en', '.zh' }}" >中文</a>
     {% elsif page.lang == "zh" %}
-        <a href="{{ page.url | replace: '.zh', '.en' }}" class="lang-link">English</a>
+        <a href="{{ page.url | replace: '.zh', '.en' }}" >English</a>
     {% endif %}
 </div>
 {% endif %}
