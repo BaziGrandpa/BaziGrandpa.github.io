@@ -16,7 +16,7 @@ lang: "zh"
 ### 几何上的概念
 <img src="{{ "/assets/img/blog_24_11_07_1.jpg" | relative_url }}" alt="描述图片的替代文字" style="width: 500px; height: auto; display: block; margin: auto;">
 
-为了在约束 $g(x_1, x_2) = 0$ 下最小化 $f(x_1, x_2)$，我们需要确保在最优点处，$f$ 的梯度（$\nabla f$）与 $g$ 的梯度（$\nabla g$）**平行**。这意味着两个梯度指向相同(或者相反)的方向，表明在不违反约束的情况下，没有进一步的优化的空间。数学上可以表示为：
+为了在约束 $g(x_1, x_2) = 0$ 下最小化 $f(x_1, x_2)$，我们需要确保在最优点处，$f$ 的梯度（$\nabla f$）与 $g$ 的梯度（$\nabla g$）**平行**。这意味着两个梯度指向相同(或者相反)的方向[（梯度和函数变化的关系）]({% post_url 2024-11-06-why-gradiant-is-the-steepest-directoin.zh %})，表明在不违反约束的情况下，没有进一步的优化的空间。数学上可以表示为：
 
 $$
 \nabla f = \lambda \nabla g
