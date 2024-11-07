@@ -168,6 +168,15 @@ In other words, the **gradient** points in the direction of the steepest increas
 So when you're standing on a hill, and you choose the direction that $ \theta = 0^{\circ} $, you will climb the hill as fast as possible. And when  $ v = (-\frac{\partial f}{\partial x}, -\frac{\partial f}{\partial y}) $,$ \theta = 180^{\circ} $
 you will go down the hill as fast as possible, that's why in machine learning, or in the task that we want to **minimize the function**, we use the negative of the gradient to update the weights in the optimization process.
 
+#### **gradient** and **gradient direction**
+<img src="{{ "/assets/img/blog_24_11_06_2.jpg" | relative_url }}" alt="描述图片的替代文本" style="width: 800px;height: auto;">
+
+When I first learned about **gradient descent**, one point that confused me was this: if the **gradient** in a particular **direction** is negative, doesn’t that mean the objective function should increase if we move in the opposite **direction**? Where does "descent" come in?
+
+The confusion here comes from mixing up the **gradient** with the **gradient direction**. Take the one-dimensional example in the figure above. The gradient degrades to the derivative. When we talk about the gradient, by definition, we are referring to the rate of change of $ f(x) $ along the axis direction, which represents how the function is changing. The **gradient direction**, on the other hand, is the direction in the variable space that points towards the direction where the function increases the fastest.
+
+We’ll refer to the first **direction** in the sentence as **Direction (1)** and the second **direction** as **Direction (2)**. The mistake in the first sentence comes from confusing **Direction (1)** with **Direction (2)**. Here, **Direction (1)** refers to the direction along the number axis, whereas **Direction (2)** refers to the **gradient direction**. Therefore, if the gradient in **Direction (1)** is negative, then **Direction (2)** actually points in the opposite direction along the number axis. Consequently, the opposite of **Direction (2)** is the direction along the number axis, which indeed is the direction in which the objective function decreases.
+
 
 ### Key Takeaways
 - If the function is **differentiable**, one can approximate the function locally by a plane, and $ \Delta z = a \Delta x + b \Delta y + \epsilon(\Delta x, \Delta y) $.
