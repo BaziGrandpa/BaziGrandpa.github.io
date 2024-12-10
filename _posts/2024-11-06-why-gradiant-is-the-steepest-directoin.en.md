@@ -168,14 +168,22 @@ In other words, the **gradient** points in the direction of the steepest increas
 So when you're standing on a hill, and you choose the direction that $ \theta = 0^{\circ} $, you will climb the hill as fast as possible. And when  $ v = (-\frac{\partial f}{\partial x}, -\frac{\partial f}{\partial y}) $,$ \theta = 180^{\circ} $
 you will go down the hill as fast as possible, that's why in machine learning, or in the task that we want to **minimize the function**, we use the negative of the gradient to update the weights in the optimization process.
 
-#### **gradient** and **gradient direction**
+#### About **Gradient** and **Derivative**
 <img src="{{ "/assets/img/blog_24_11_06_2.jpg" | relative_url }}" alt="描述图片的替代文本" style="width: 800px;height: auto;">
 
-When I first learned about **gradient descent**, one point that confused me was this: if the **gradient** in a particular **direction** is negative, doesn’t that mean the objective function should increase if we move in the opposite **direction**? Where does "descent" come in?
+When I first encountered gradient descent, one point that confused me was: if the **gradient** at a point is negative, wouldn’t the target function increase in the opposite direction of the **gradient**? Where does the "gradient descent" come from?
 
-The confusion here comes from mixing up the **gradient** with the **gradient direction**. Take the one-dimensional example in the figure above. The gradient degrades to the derivative. When we talk about the gradient, by definition, we are referring to the rate of change of $ f(x) $ along the axis direction, which represents how the function is changing. The **gradient direction**, on the other hand, is the direction in the variable space that points towards the direction where the function increases the fastest,more specifically, **gradient direction** = $ \frac{\nabla f}{\left\| \nabla f \right\|} $.
+This confusion arises from an unclear understanding of the definition of a **gradient**. For a function \\( f(x_1, x_2, \\ldots, x_n) \\), the **gradient** is a **vector field** defined in \\( n \\)-dimensional space, rather than a simple combination of **partial derivatives** at each point! For each point, the corresponding vector is the direction in which the function value increases the fastest. In other words, the **gradient** is a **vector** in the variable space.
 
-We’ll refer to the first **direction** in the sentence as **Direction (1)** and the second **direction** as **Direction (2)**. The mistake in the first sentence comes from confusing **Direction (1)** with **Direction (2)**. Here, **Direction (1)** refers to the direction along the number axis, whereas **Direction (2)** refers to the **gradient direction**. Therefore, if the gradient in **Direction (1)** is negative, then **Direction (2)** actually points in the opposite direction along the number axis. Consequently, the opposite of **Direction (2)** is the direction along the number axis, which indeed is the direction in which the objective function decreases.
+Returning to the one-dimensional case, the gradient degrade to the derivative. It may superficially seem like a scalar, but the direction is actually embedded in the positive or negative sign of this scalar! The **+/−** indicates the positive or negative direction along the number axis, which is an area where misconceptions can easily arise.
+
+- **Derivative**: Represents the rate of change of \\( f(x) \\) with respect to \\( x \\) along the number axis. It is a scalar.
+
+- **Gradient**: As a vector, it points in the direction of the steepest increase in the function within the variable space.
+
+Therefore, in the one-dimensional case, if the derivative is negative, the **gradient** points in the negative direction along the number axis. The **opposite direction of the gradient** is the direction in which the function value decreases the fastest, which is the positive direction along the number axis.
+
+
 
 
 ### Key Takeaways
