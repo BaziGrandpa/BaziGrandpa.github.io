@@ -2,7 +2,7 @@
 layout: page
 title:  "Traditional optimization method for continuous optimization"
 subtitle: "Basic optimization methods"
-date:   2024-10-07 21:21:21 +0530
+date:   2024-12-08 21:21:21 +0530
 categories: ["Stochastic Optimization"]
 lang: "en"
 ---

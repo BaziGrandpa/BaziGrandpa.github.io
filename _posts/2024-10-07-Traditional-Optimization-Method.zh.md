@@ -2,7 +2,7 @@
 layout: page
 title:  "一些经典优化算法"
 subtitle: "从无约束和有约束的角度看优化问题"
-date:   2024-10-07 21:21:21 +0530
+date:   2024-12-08 21:21:21 +0530
 categories: ["Stochastic Optimization"]
 lang: "zh"
 ---
