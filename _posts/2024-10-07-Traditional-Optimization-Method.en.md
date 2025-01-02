@@ -170,3 +170,7 @@ So to minimize the penalty method, the problem is converted to an unconstrained 
 - **Unconstrained optimization**: **Gradient descent** and **Newton's method** are two popular optimization algorithms for unconstrained optimization problems. And gradient descent is a first-order optimization algorithm, while Newton's method is a second-order optimization algorithm.
 
 - **Constrained optimization**: **Lagrange multiplier method** mainly used to solve optimization problems with **equality constraints**. And **Penalty method** can transform a constrained optimization problem to an unconstrained problem that can then be solved using standard numerical methods.
+
+
+## References
+- *Wahde, M. Biologically Inspired Optimization Methods: An Introduction. Chalmers University of Technology, Sweden, 2008.*

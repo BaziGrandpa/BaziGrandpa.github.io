@@ -85,3 +85,7 @@ lang: "zh"
 ## Key Takeaways
 - 无约束优化：梯度下降法和牛顿法是两种常见的无约束优化算法。梯度下降法是一阶优化算法，而牛顿法是二阶优化算法。
 - 有约束优化：拉格朗日乘数法主要用于解决等式约束优化问题，而惩罚法可以将有约束优化问题转化为无约束问题，再通过经典数值方法求解。
+
+
+## References
+- *Wahde, M. Biologically Inspired Optimization Methods: An Introduction. Chalmers University of Technology, Sweden, 2008.*
