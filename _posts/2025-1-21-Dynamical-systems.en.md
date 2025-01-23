@@ -63,7 +63,7 @@ $$
 
 ### 1.3 Bifurcations in 1D
 **What is bifurcation?** A bifurcation is a qualitative change in the dynamics of a system as a **parameter** is varied. Imagine a box resting on a pole. As the weight of the box changes, the curvature of the pole also changes to balance the system. However, if we keep increasing the weight of the box, there may come a point where the pole breaks. This breaking point represents a bifurcation in the box-pole system: beyond this point, the pole can no longer return to any stable curvature, regardless of the weight of the box.
-
+<img src="{{ "/assets/img/blog_25_1_21_13.png" | relative_url }}" alt="Alt text describing the image" style="width: 650px; height: auto; display: block; margin: auto;">
 - **One-Parameter Bifurcations**:
   - Saddle-node bifurcation.
   - Transcritical bifurcation.
@@ -141,7 +141,7 @@ Thus far, we have only discussed the local behavior of a system around a specifi
   - How to find limit cycles:
     - **Poincaré-Bendixson Theorem**:Assume a smooth flow in a bounded domain D of the plane. Assume further that D does not contain any fixed point and that there exists a trajectory that is confined in D for all times. Then at least one periodic orbit exists in D.
      <img src="{{ "/assets/img/blog_25_1_21_7.png" | relative_url }}" alt="Alt text describing the image" style="width: 500px; height: auto; display: block; margin: auto;">
-    - Dulac’s criterion.
+   
   - How to rule out closed orbits or limit cycles
     - **Gradient systems**: $\dot{x} = - \nabla V(x)$ , in gradient systems $x$ always move toward the direction decrease total energy $V$ the most, so there would be no oscillations.
     - **Dulac’s criterion**:consider a differentiable function $V (x)$ such that $\nabla · (V\dot{x})$ does not change sign in some domain. If such function exists, there are no closed orbits in the domain (Green’s theorem).
