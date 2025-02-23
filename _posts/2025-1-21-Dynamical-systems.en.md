@@ -93,7 +93,7 @@ and the fixed points type can be classfied as below:
 By referencing the 'Zoo' of fixed points, one can quickly determine the type of a fixed point using the trace and determinant of the Jacobian matrix.
 <img src="{{ "/assets/img/blog_25_1_21_5.png" | relative_url }}" alt="Alt text describing the image" style="width: 500px; height: auto; display: block; margin: auto;">
 
-For a 2D system $$\dot{x} = Ax \, , \, A = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \, .$$  according to the characteristic equation $0 = \det(A - \lambda I) = \lambda^2 - \tau\lambda + \Delta$, we can to get the eigenvalues of the system.
+For a 2D system $$\dot{x} = Ax \, , \, A = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \, .$$  according to the characteristic equation $0 = \det(A - \lambda I) = \lambda^2 - \tau\lambda + \Delta$( where $\tau = a + d$, namely the **Trace** of the matrix, and $\Delta = ad - bc$ which is the **determinant** of the matrix), we can get the eigenvalues of the system.
 
 Why are we interested in the **eigenvalues** of the system? Because they allow us to transform the system so that its eigenvectors are aligned with the coordinate axes. This simplifies the analysis, as we can focus on how the eigenvalues dictate the system's behavior near the fixed point. If the **real part** of an eigenvalue is greater than 0, the system expands exponentially along the corresponding eigenvector direction. Conversely, if the **real part** of an eigenvalue is less than 0, the system contracts exponentially along that direction. 
 
