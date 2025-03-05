@@ -65,7 +65,7 @@ $$
 \frac{d^2u}{dx^2} = \lim_{\Delta x \to 0} \frac{\left(\frac{u(x+\Delta x) - u(x)}{\Delta x}\right) - \left(\frac{u(x) - u(x-\Delta x)}{\Delta x}\right)}{\Delta x}
 $$
 
-Rewriting the numerator:
+Rewriting the denominator:
 
 $$
 \frac{d^2u}{dx^2} = \lim_{\Delta x \to 0} \frac{u(x+\Delta x) - 2u(x) + u(x-\Delta x)}{(\Delta x)^2}
