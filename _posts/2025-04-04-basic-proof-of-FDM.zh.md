@@ -4,7 +4,7 @@ title:  "Numerical PDEs"
 subtitle: ""
 date:   2025-4-4 01:00:00 +0530
 categories: ["Analysis"]
-lang: "en"
+lang: "zh"
 ---
 
 # Bridging the Gap: From Continuous PDEs to Finite Difference Methods
@@ -13,7 +13,7 @@ In computational mathematics, we often face partial differential equations (PDEs
 
 But how do we ensure that these discrete approximations actually behave like the original equation? That’s where key ideas like **grid projection**, **residual**, **consistency**, and **stability** come into play.
 
-
+---
 
 ## 🌉 From Continuous to Discrete: Building the Bridge
 
@@ -47,7 +47,7 @@ $$
 
 The function $y_{mn}$, defined only at discrete points, is called a **grid function**, and it approximates the continuous solution: $y_{mn} \approx u(x_m, t_n)$.
 
-
+---
 
 ## 🧮 Discretizing the PDE: The Finite Difference Scheme
 
@@ -59,7 +59,7 @@ $$
 
 This is an algebraic system that we can solve numerically. But how do we know if this system faithfully represents the original PDE?
 
-
+---
 
 ## 📏 Residual: Testing the Scheme
 
@@ -73,7 +73,7 @@ This measures the **discrepancy** between the finite difference scheme and the e
 
 If the method is good, this residual should become small as the grid is refined.
 
-
+---
 
 ## ✅ Definition: Consistency
 
@@ -87,7 +87,7 @@ Here, $\|\cdot\|$ is a suitable norm (e.g. $L^2$, $L^\infty$) over the space of 
 
 **Intuition:** Consistency checks if your scheme **captures the dynamics** of the original PDE correctly.
 
-
+---
 
 ## 🛡️ Definition: Stability (Zero-Stability)
 
@@ -109,7 +109,7 @@ for a constant $C$ independent of $h, \tau$, and for small enough perturbations.
 
 **Intuition:** Stability asks whether the method is **sensitive to noise or rounding errors**. A stable method won’t "explode" due to small mistakes.
 
-
+---
 
 ## 📚 The Big Picture: Lax Equivalence Theorem
 
@@ -123,7 +123,7 @@ $$
 
 This tells us the numerical solution truly approximates the continuous one.
 
-
+---
 
 ## 🧠 Intuition Recap
 
@@ -170,7 +170,7 @@ $$
 \|y^{n+1}\|_\infty \leq \|y^n\|_\infty
 $$
 
-
+---
 
 ## 🎯 Final Thoughts
 
