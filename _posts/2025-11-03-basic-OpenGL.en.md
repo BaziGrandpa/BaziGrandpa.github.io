@@ -309,5 +309,8 @@ And then on the GPU side, here’s what happens under the hood:
 
 - **VAO + Shader define how data flows; VBO/EBO/Textures define where data lives.**
 
+## References
+- [TDA362 - Computer Graphics, Chalmers University of Technology](https://www.cse.chalmers.se/edu/course/TDA362/tutorials/index.html)
+
 
 
